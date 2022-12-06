@@ -1,2 +1,2 @@
-# Rosalind
-Fun with https://rosalind.info/problems/list-view/
+# Rosalind 🧬
+My solutions to problems found at: https://rosalind.info/problems/list-view/
