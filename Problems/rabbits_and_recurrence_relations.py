@@ -28,15 +28,16 @@ def rabbits_and_recurance(n, k):
     if n in cache:
         return cache[n]
     if n == 1:
-            value = 1
+        value = 1
     elif n == 2:
-            value = 1
-    elif n > 2:           
-            value =  rabbits_and_recurance(n -1,k) + k * rabbits_and_recurance(n -2,k)
+        value = 1
+    elif n > 2:
+        value = rabbits_and_recurance(n - 1, k) + k * rabbits_and_recurance(n - 2, k)
     cache[n] = value
     return value
 
-#driver code
+
+# driver code
 n = 30
 k = 3
-print(rabbits_and_recurance(n,k))
+print(rabbits_and_recurance(n, k))

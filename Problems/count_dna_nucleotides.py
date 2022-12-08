@@ -19,7 +19,7 @@ out:
 
 
 """
- 
+
 dna = input("enter DNA strand: ")
-for i in 'ACGT':
+for i in "ACGT":
     print(dna.count(i))

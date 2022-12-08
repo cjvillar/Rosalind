@@ -26,8 +26,8 @@ GGUGUAUAAGAUUAUUCCGGCAAAAUACCUUCUAUCUAGGCCAGUAUUUAUCCGGCCAGCAAUAAAGCAAGCGAUGUGUU
 DNA = input("Enter DNA to transcribe: ")
 RNA = []
 for i in DNA:
-    if i == 'T':
-        i = 'U'
+    if i == "T":
+        i = "U"
     RNA.append(i)
-    
-print(''.join(RNA))
+
+print("".join(RNA))
