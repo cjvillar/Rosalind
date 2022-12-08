@@ -56,8 +56,11 @@ def calc_gc_content(stripped_fasta_out):
         g_c_calc.update(
             {key: float((value.count("G") + value.count("C")) / len(value) * 100)}
         )
-    # print([k for k,v in g_c_calc.items() if v ==  max(g_c_calc.values())][0], '\n', max(g_c_calc.values()))
-    print(stripped_fasta_out)
+    print(
+        [k for k, v in g_c_calc.items() if v == max(g_c_calc.values())][0],
+        "\n",
+        max(g_c_calc.values()),
+    )
 
 
 if __name__ == "__main__":
