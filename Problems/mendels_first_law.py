@@ -49,7 +49,6 @@ def mendels_first_law(k, m, n):
 
     dominants = filter(lambda c: "A" in c, tot_children)
     return len(list(dominants)) / len(tot_children)
-   
 
 
 # strategy to calc recessive alleles
