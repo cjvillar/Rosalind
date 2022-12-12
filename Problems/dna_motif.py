@@ -27,7 +27,7 @@ def motif(s, t):
     for i in range(len(s)):
         if t in s[i : i + len(t)]:
             motif.append(i + 1)  # i + 1 because we want 1 base start
-    return motif
+    return ' '.join(str(x) for x in motif) #return in proper format (str with spaces) for Rosalind
 
 
 # driver code
