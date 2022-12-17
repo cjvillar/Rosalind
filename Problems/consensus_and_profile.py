@@ -64,26 +64,26 @@ import argparse
 from collections import Counter
 
 
-
 def open_fasta(in_file):
     dna_strings = []
     with open(in_file, "r") as f:
         for line in f:
             if line.startswith(">"):
                 continue
-            dna_strings.append(line.strip('\n'))
-    
+            dna_strings.append(line.strip("\n"))
+
     return dna_strings
+
 
 def consensus_profile(stripped_fasta_out):
     i = 0
-    nuc = ['A','C','G','T']
+    nuc = ["A", "C", "G", "T"]
     while i < len(stripped_fasta_out):
         column = []
         for bp in stripped_fasta_out:
             column.append(bp[i])
         i += 1
-        
+
         counts = Counter(column)
         col_list = []
         for n in nuc:
@@ -100,6 +100,3 @@ if __name__ == "__main__":
     in_file = arguments.in_file
     stripped_fasta_out = open_fasta(in_file)
     consensus_profile(stripped_fasta_out)
-    
-    
-    
