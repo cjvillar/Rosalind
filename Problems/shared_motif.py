@@ -36,9 +36,9 @@ def open_fasta(in_file):
 
 
 def find_motif(stripped_fasta_out):
-    #get length of first common substring then look for a longer one 
+    # get length of first common substring then look for a longer one
     for dna_string in stripped_fasta_out:
-
+        pass
 
 
 if __name__ == "__main__":
