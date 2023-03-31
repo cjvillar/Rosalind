@@ -65,7 +65,7 @@ def remove_introns(dna, substrings):
 
 
 def transcribe(dna):
-    "Translate the T in dna to U for rna"
+    "Change the T in dna to U for rna"
     exons = dna
     RNA = []
     for i in exons:
