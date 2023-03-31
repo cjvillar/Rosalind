@@ -65,6 +65,7 @@ RNA_codon_dict = {
     "GGG": "G",
 }
 
+
 def open_fasta(in_file):
     """Open fasta file, if line starts with > skip and put next line in list"""
     dna_strings = []
