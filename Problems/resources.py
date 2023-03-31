@@ -80,16 +80,5 @@ def open_fasta(in_file):
 
 def complement_string(s):
     "Returns the complement dna str for a str of dna"
-    complement = []
-    for dna_nucleotide in list(s):
-        if dna_nucleotide.upper() == "G":
-            dna_nucleotide = "C"
-        elif dna_nucleotide.upper() == "A":
-            dna_nucleotide = "T"
-        elif dna_nucleotide.upper() == "T":
-            dna_nucleotide = "A"
-        elif dna_nucleotide.upper() == "C":
-            dna_nucleotide = "G"
-        complement.append(dna_nucleotide)
-
-    return "".join(complement[::-1])
+    comp = {"A": "T", "C": "G", "T": "A", "G": "C"}
+    return "".join([comp[x] for x in s])
