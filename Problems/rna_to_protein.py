@@ -115,5 +115,3 @@ for i in range(0, len(s), 3):
     protein.append(RNA_codon_dict.get(s[i : i + 3]))
 
 print("".join(protein).replace(" ", ""))
-
-
