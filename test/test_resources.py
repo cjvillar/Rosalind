@@ -1,10 +1,9 @@
-import os
 import unittest
 import pytest
 from unittest.mock import mock_open, patch
 import sys
 import logging
-sys.path.append("../solutions/")
+sys.path.append("./solutions/")
 from resources import complement_string, rna_to_protien, open_fasta
 logging.basicConfig(level=logging.INFO)
 
