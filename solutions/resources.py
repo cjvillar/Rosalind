@@ -88,6 +88,7 @@ def complement_string(s):
     comp = {"A": "T", "C": "G", "T": "A", "G": "C"}
     return "".join([comp[x] for x in s])
 
+
 def rna_to_protien(rna):
     "loop through every 3 rna letters and look up key: value in RNA_codon_dict"
     # translate rna to protein
