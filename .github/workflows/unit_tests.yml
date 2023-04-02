@@ -1,5 +1,6 @@
 name: Pytest CI
 on:
+  [workflow_dispatch]
   push:
     branches:
       - master
