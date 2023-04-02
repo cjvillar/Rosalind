@@ -38,5 +38,7 @@ from resources import complement_string
 # TODO Return: The position and length of every reverse palindrome in the string having length between 4 and 12.
 s = "TCAATGCATGCGGGTCTATATGCAT"
 
-print(s)
-print(complement_string(s))
+print(s[::-1])
+comp_of_comp = complement_string(s[:])
+print(complement_string(comp_of_comp))
+

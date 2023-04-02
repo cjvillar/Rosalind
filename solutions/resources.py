@@ -1,3 +1,8 @@
+"""
+If a block of code is used in multiple challenges put here.
+
+"""
+
 RNA_codon_dict = {
     "UUU": "F",
     "CUU": "L",
