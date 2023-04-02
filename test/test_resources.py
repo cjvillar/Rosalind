@@ -3,9 +3,12 @@ import pytest
 from unittest.mock import mock_open, patch
 import sys
 import logging
+
 sys.path.append("./solutions/")
 from resources import complement_string, rna_to_protien, open_fasta
+
 logging.basicConfig(level=logging.INFO)
+
 
 class TestResources(unittest.TestCase):
 
@@ -13,12 +16,11 @@ class TestResources(unittest.TestCase):
     def test_open_fasta(self):
         fasta_lines = [">Rosalind_1", "ATCCAGCT", ">Rosalind_2", "GGGCAACT"]
         expected_out = ["ATCCAGCT", "GGGCAACT"]
-    
+
         with patch("builtins.open", mock_open(read_data="\n".join(fasta_lines))) as m:
             output = open_fasta(in_file="test_mock.fasta")
             m.assert_called_once_with("test_mock.fasta", "r")
             self.assertEqual(output, expected_out)
-           
 
     # test case 1: expected out
     def test_complement_string(self):
