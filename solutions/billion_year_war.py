@@ -41,4 +41,3 @@ s = "TCAATGCATGCGGGTCTATATGCAT"
 print(s[::-1])
 comp_of_comp = complement_string(s[:])
 print(complement_string(comp_of_comp))
-
